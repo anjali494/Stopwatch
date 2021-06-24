@@ -1,0 +1,74 @@
+#stopwatch {
+    font-family: 'Orbitron', sans-serif;
+    
+    font-size: 500%;
+    font-weight: lighter;
+    color: #fff;
+    margin-top: 2.5em;
+
+}
+#bd {
+    background-color: #000000ce;
+    display: flex;
+}
+
+
+#whole {
+    margin: auto;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    
+}
+
+.btns button {
+    background-color: transparent;
+    margin-left: 1em;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.btns .toggle {
+    transition: all 0.3s ease;
+    background-color: #508052;
+    z-index: 1;
+}
+
+.btns .toggle:active,
+.btns .reset:active,
+.btns .lap:active {
+    transform: scale(0.9);
+}
+
+.btns .toggle.on {
+    background-color: #d92027;
+}
+
+.btns .reset,
+.btns .lap {
+    transition: all 0.3s ease;
+}
+
+#laps {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-size: 200%;
+    margin-top: 2rem;
+}

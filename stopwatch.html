@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="./stopwatch.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <title>Stopwatch</title>
+    <script src="./stopwatch.js"></script>
+</head>
+
+<body id="bd">
+    <div id="whole">
+    <div id="stopwatch">00:00:00</div>
+    <div class="btns">
+        
+        <button class="reset" onclick="reset()">Reset</button>
+        <button class="toggle" id="start" onclick="start()">Start</button>
+        <button class="lap" onclick="lap()">Lap</button>
+    </div>
+    <div id="lap">
+        <ul id="laps"></ul>
+    </div>
+</div>
+   
+</body>
+</html>
